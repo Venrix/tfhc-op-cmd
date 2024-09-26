@@ -1,0 +1,307 @@
+---
+title: Close Air Support
+title_short: CAS
+date: '2023-07-29'
+nav_index: 3
+---
+
+<script>
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+    import Tooltip from "$lib/wikitools/Tooltip.svelte"
+</script>
+
+## Einleitung
+
+### <Tooltip text="Close Air Support">CAS</Tooltip> ist ein wichtiger Bestandteil zur Bekämpfung des Feindes am Boden. Hierbei wird <Tooltip text="Close Air Support">CAS</Tooltip> hauptsächlich durch einen <Tooltip text="Forward Air Controller">FAC</Tooltip> über Funk angefordert. Dabei ist es unerlässlich, dass der Pilot alle Informationen, die für ein sicheres und erfolgreiches Ausführen des Auftrages erhält. Hierfür gibt es den 9-Liner.
+
+## Check-In Briefing
+
+### Bevor der 9-Liner durchgegeben wird, muss der Pilot ein Check-in Briefing dem FAC übermitteln. In einem Check-in Briefing wird aufgezählt, welches Luftfahrzeug mit welchen Waffenanlagen verfügbar ist. Hierbei gibt der Pilot in Reihenfolge an:
+
+- Number/Typ of Aircraft
+
+<ExampleBox>
+
+1x F-16
+
+2x AH-64D
+
+</ExampleBox>
+
+- Position
+
+<ExampleBox>
+
+6-stellige Gitterkoordinate
+
+</ExampleBox>
+
+- Weapon on Aircraft
+
+<ExampleBox>
+
+Aircraft 1: F-16, Viper 1, 4x GBU-12, 2x AGM-65B
+
+Aircraft 2: AH-64D, Demon 1, 16x AGM-114A, 1200x 30 mike mike HEDP
+
+Aircraft 3: AH-64D, Demon 2, 16x AGM-114A, 1200x 30 mike mike HEDP
+
+</ExampleBox>
+
+- Play Time
+
+<ExampleBox>
+
+Angabe der Zeit, wie lange die Luftfahrzeuge für den Einsatz in der Luft bleiben können
+
+</ExampleBox>
+
+- Remarks
+
+<ExampleBox>
+
+Zusätzliche Hinweise zur Ausrüstung der Luftfahrzeuge, wie zum Beispiel keine Nachtsichtmöglichkeiten oder kein <Tooltip text="Targeting Pod">TGP</Tooltip>
+
+</ExampleBox>
+
+## Controll Type
+
+### Sobald der FAC alle Daten erfasst hat und <Tooltip text="Bestätigung von seiner Führungsperson">Zustimmung</Tooltip> für einen CAS bekommen hat, nimmt er wieder Kontakt mit den Piloten auf und startet mit dem 9-Liner. Der 9-Liner wird eingeleitet mit dem Typ der Durchführung:
+
+- Type I
+
+<ExampleBox>
+
+FAC hat Sicht auf Pilot und das Ziel.
+
+Pilot hat Sicht auf das Ziel.
+
+FAC hat volle Kontrolle über den Angriff auf das Ziel.
+
+</ExampleBox>
+
+- Type II
+
+<ExampleBox>
+
+FAC hat keine Sicht auf das Ziel und/oder Pilot.
+
+Pilot hat keine Sicht auf das Ziel.
+
+FAC hat eingeschränkte Kontrolle über den Angriff auf das Ziel.
+
+</ExampleBox>
+
+- Type III
+
+<ExampleBox>
+
+FAC hat keine Sicht auf das Ziel und/oder Pilot.
+
+Pilot hat keine Sicht auf das Ziel.
+
+FAC hat eingeschränke Kontrolle über den Angriff auf das Ziel und gibt dem Piloten die Freigabe über eigenständige Nutzung der Waffenanlagen.
+
+</ExampleBox>
+
+### Nach der Durchsage vom Typ der Kontrolle gibt der FAC auch an, wer die Kontrolle, als auch die Verantwortung über diesen Einsatz hat. Hier nennt er dann sein Rufzeichen oder den vom führenden FAC.
+
+## 9-Liner
+
+### Nach der Einleitung beginnt der wichtigste Teil:
+
+1. <Tooltip text="Welche Initial Point soll angeflogen werden">IP</Tooltip>/<Tooltip text="Von welchen Battle Point soll gekämpft werden">BP</Tooltip>
+2. <Tooltip text="In welche Richtung befindet sich das Ziel (ausgehend von IP/BP)">Heading</Tooltip> <Tooltip text=" Versatzrichtung zur Einschränkung der Bewegungsfreiheit des angreifenden Flugzeugs">Offset (L/R)</Tooltip>
+3. <Tooltip text="Distanz vom IP/BP zum Ziel in nautical miles (NM)">Distance</Tooltip>
+4. <Tooltip text="Angabe der Position des Ziels mit Hilfe von 6-stelligen Gitterkoordinaten oder genaue beschreibung der Position mit Hilfe der Umgebung">Target location</Tooltip>
+5. <Tooltip text="Höhe des Ziels in Fuß (ft) über den Meeresspiegel">Target elevation</Tooltip>
+6. <Tooltip text="Visuelle Beschreibung des Ziels">Target description</Tooltip>
+7. <Tooltip text="Typ der zu benutzenden Waffenanlage + Typ der Markierung">Weapon type/Mark Type</Tooltip>
+8. <Tooltip text="Position der verbündeten Streitkräften die dem Ziel am nächsten sind. Richtung vom Ziel ausgehend beschreiben mit Hilfe der Himmelsrichtungen und entfernung in Meter angeben oder visuell markieren.">Friendlies</Tooltip>
+9. <Tooltip text="Richtung für sicheren Rückzug (wird mit dem Wort EGRESS eingeleitet)">Egress</Tooltip>
+
+## Remarks
+
+### Nach der Übergabe des 9-Liners wird der Pilot nach seiner Bereitschaft für den Empfang der Remarks gefragt. Bei Bestätigung der Bereitschaft gibt der FAC die Remarks weiter. Über die Remarks werden, wenn bekannt, feindliche Luftabwehrstellungen weiter gegeben, Lufthöhe eingeschränkt und/oder die <Tooltip text="Time On Target">TOT</Tooltip>/<Tooltip text ="Time To Target">TTT</Tooltip> festgelegt.
+
+- <Tooltip text="Time On Target">TOT</Tooltip>
+
+<ExampleBox>
+
+Legt die Uhrzeit für den Angriff fest
+
+TOT 40 = Aktuelle Stunde:40 min
+
+</ExampleBox>
+
+- <Tooltip text ="Time To Target">TTT</Tooltip>
+
+<ExampleBox>
+
+Legt die Zeit bis zum Angriff fest
+
+TTT 5 = Angriff in ca. 5 min
+
+</ExampleBox>
+
+## Rückmeldung/Korrektur
+
+### Nach Durchgabe der Remarks wiederholt der Pilot die 4.,8.-Line und die Remarks. Bei Fehler oder Änderungen korrigiert der FAC die Daten.
+
+### Es ist, für beide Seiten, zu empfehlen einen Stift und ein Blatt Papier vorhanden zu haben.
+
+## Brevity Terms
+
+### Kommunikation
+
+- <Tooltip text="Luftfahrzeug hat die Warteposition verlassen und steuert den IP an">Inbound</Tooltip>
+
+- <Tooltip text="Luftfahrzeug hat die Warteposition verlassen und hat den BP erreicht">On Station</Tooltip>
+
+- <Tooltip text="Stze deine Aktion fort">Continue</Tooltip>
+
+- <Tooltip text="Abbruch der Mission/Aktion/Aufgabe">Abort</Tooltip>
+
+- <Tooltip text="Freundliches Fluggerät oder eine Markante Bodenposition erkannt">Visual</Tooltip>
+
+- <Tooltip text="Gegnteil von Visual">Blind</Tooltip>
+
+- <Tooltip text="Ein Ziel mit Bordeigenen Sensoren erfasst/gefunden">Contact</Tooltip>
+
+- <Tooltip text="Gegenteil von Contact">Looking</Tooltip>
+
+- <Tooltip text="Feind visuell erkannt">Tally</Tooltip>
+
+- <Tooltip text="Gegenteil von Tally">No Joy</Tooltip>
+
+- <Tooltip text="Feuererlaubnis für diesen Einsatz auf das genannte Ziel (Typ 1 und 2)">Cleared Hot</Tooltip>
+
+- <Tooltip text="Feuererlaubnis während eines Typ 3 Angriffs">Cleared to Engage</Tooltip>
+
+- <Tooltip text="Waffeneinsatz zeigt positive Wirkung auf das Ziel">Splash</Tooltip>
+
+- <Tooltip text="Waffeneinsatz zeigt Wirkung auf das Ziel">Hit</Tooltip>
+
+- <Tooltip text="Waffeneinsatz zeigt keine Wirkung auf das Ziel">Miss</Tooltip>
+
+- <Tooltip text="Abflug in die spezifizierte Richtung">Off</Tooltip>
+
+- <Tooltip text="Typ 3 Angriff ist beendet">Engagement Complete</Tooltip>
+
+- <Tooltip text="Einsatz einer bestimmten Waffe">(Weapon) Away</Tooltip>
+
+- <Tooltip text="Feindliches Flugzeug in der Luft">Bandit</Tooltip>
+
+- <Tooltip text="Einsatz von CAS so nah an Alliierten Einheiten, dass
+  verstärkt mit eigenen Verlusten gerechnet wird">Danger Close</Tooltip>
+
+- <Tooltip text="Einsatz von Rauchkörpern zur Markierung von Positionen">Smoke (Friendly/Target)</Tooltip>
+
+- <Tooltip text="Will comply with received instructions">Wilco</Tooltip>
+
+- <Tooltip text="Munition aufgebraucht">Winchester</Tooltip>
+
+- <Tooltip text="Im Einsatzgebiet kann es zu Beschuss kommen">Hot</Tooltip>
+
+- <Tooltip text="Im Einsatzgebiet wird kein Beschuss erwartet">Cold</Tooltip>
+
+- <Tooltip text="Keine Bedrohung">No Factor</Tooltip>
+
+### Brevity Terms für Laser Einsatz
+
+### Pilot an FAC:
+
+- <Tooltip text="Laser bereitmachen">10 Seconds</Tooltip>
+
+- <Tooltip text="Laser Aktivieren">Laser On</Tooltip>
+
+- <Tooltip text="Laser wurde erkannt">Spot</Tooltip>
+
+- <Tooltip text="Laser wurde über Bordsensoren erkannt">Capture</Tooltip>
+
+- <Tooltip text="Laser wurde nicht erkannt">Negative Laser</Tooltip>
+
+- <Tooltip text="Laser Deaktivieren">Terminate Laser</Tooltip>
+
+### Fac and Pilot
+
+- <Tooltip text="Laser ist Aktiv">Lasing</Tooltip>
+
+## Funkverkehr Aufbau mit Beispiel
+
+1. Überblick über die Situation beschaffen
+
+2. CAS Check-in Briefing beschaffen
+
+3. Einsatzmöglichkeiten bestimmen
+
+4. 9-Liner Übertragung durchführen
+
+5. Wenn Fehler vorhanden sind, Fehler korrigieren
+
+6. Ausführung des Auftrags
+   - Anflug
+   - Ziel suche
+   - Markieren
+   - Markierung erfassen
+   - Nutzung der Waffenanlage nach Freigabe vom FAC
+   - Rückmeldung zum Angriff
+   - ( Zweiter Angriff )
+   - Egress
+
+<ExampleBox>
+
+## FAC als Spider 1-1 | Pilot als Demon 1-3
+
+FAC: "Spider 1-1 and Demon, Kommen."
+
+Pilot: "Demon 1-3 hört."
+
+FAC: "1-1 fordert Check-in Briefing an, Kommen."
+
+Pilot: "Wilco, eins mal Apache, grid 173-440, geladen mit eins-sechs mal Hellfires und eins-zwo-null-null mal dreizig mike mike High Explosive Dual Purpose, play time
+fünfzehn mike, Remarks ... Kein Wingmen, Wenig Treibstoff. So aufgenommen?"
+
+FAC: "So mit 1-3. Standby für weiteres Vorgehen."
+
+#### FAC bespricht weiteres Vorgehen mit <Tooltip text="Squad Lead (Gruppenführer)">SL</Tooltip> und bereitet den 9-Liner vor.
+
+FAC: "1-3 hier ist 1-1, das wird eine Typ eins Kontrolle, Kontrolle hat Spider 1-1, Melden Sie sich wenn bereit für Empfang des 9-Liners."
+
+#### Pilot bereitet sich vor mit einem Blatt Papier und Stift, wenn das noch nicht passiert ist.
+
+Pilot: "1-1, hier 1-3, bereit für Übertragung, Kommen."
+
+FAC: "Battlepoint Foxtail, 233 right, null-komma-drei Nautische Meilen, Grid 112-040, 112, IFV vom Typ PT-76, eins mal Hellfire-Laser-Code: vier-vier-fünf-null, fünf-null-null Süd, EGRESS null-zwo-null. Melden wenn bereit für Remarks."
+
+Pilot: "Bereit für Remarks, Kommen."
+
+FAC: "Remarks T-O-T vier-null, Bereich Cold. So Aufgenommen?"
+
+Pilot: "Ziel Grid 112-040, Frienly 500 Süd, Remarks T-O-T vier-null, Bereich Cold, Kommen."
+
+FAC: "1-1 bestätige Richtigkeit."
+
+#### Pilot bereitet sich einen Plan vor und fängt an
+
+Pilot: "Demon 1-3, Battlepoint on Station, Kommen."
+
+FAC: "1-3, Continue."
+
+Pilot: "1-3, Looking, Laser On."
+
+FAC: "Wilco, Lasing."
+
+Pilot: "Spot, Tally Target."
+
+FAC: "Cleared Hot."
+
+Pilot: "Wilco, eins Hellfire away."
+
+FAC: "Splash, Target destroyed."
+
+Pilot: "Off null-zwo-null, RTB."
+
+FAC: "So mit, Ende."
+
+</ExampleBox>
